@@ -1,0 +1,44 @@
+
+/*
+CSS 语法
+*/
+p{
+    color: rgb(0, 0, 0); 
+    font-size: 20px; 
+    /*font-style: italic;*/
+    font-family: "Georgia"
+}
+
+h1{
+    color: rgb(0, 0, 0); 
+    font-size: 40px; 
+    font-family: "Georgia"  
+}
+
+h2{
+    color: rgb(0, 0, 0); 
+    font-size: 20px; 
+    font-family: "Georgia"  
+}
+
+
+li{
+    color: rgb(0, 0, 0); 
+    font-size: 17px;
+    font-family: "Georgia"  
+}
+
+/* id 选择器 */
+#slogan{
+    color: rgb(185, 14, 14); 
+    font-size: 30px; 
+    font-style: italic
+
+}
+
+
+/* class 可以给多个标签，重复使用, 也可以为一个指定多个class
+.text{
+
+}
+*/
