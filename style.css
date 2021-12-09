@@ -26,7 +26,9 @@ h2{
     font-family: "Georgia"  
 }
 
-
+ul{
+    list-style: none;
+}
 li{
     color: rgb(0, 0, 0); 
     font-size: 17px;
@@ -44,6 +46,10 @@ li{
 .text{
     padding-left: 100px;
     padding-right: 100px;
+}
+
+#menu_box{
+    margin-left: 800px;
 }
 
 /* class 可以给多个标签，重复使用, 也可以为一个指定多个class
