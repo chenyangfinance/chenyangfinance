@@ -1,27 +1,38 @@
 
 /*
 CSS 语法
-
 */
+
+body{
+    background-color:lightgray ;
+}
 .top_menu{
     margin: 50px;
-}
+    color: #333;
 
+}
+.top_menu a{
+    text-decoration: none;
+    font-family: "Georgia";
+}
+.top_menu:hover{
+    background-color: lightskyblue;
+}
 p{
-    color: rgb(0, 0, 0); 
+    color: #333;
     font-size: 20px; 
     /*font-style: italic;*/
     font-family: "Georgia"
 }
 
 h1{
-    color: rgb(0, 0, 0); 
+    color: #333; 
     font-size: 40px; 
     font-family: "Georgia"  
 }
 
 h2{
-    color: rgb(0, 0, 0); 
+    color: #333;
     font-size: 20px; 
     font-family: "Georgia"  
 }
@@ -30,7 +41,7 @@ ul{
     list-style: none;
 }
 li{
-    color: rgb(0, 0, 0); 
+    color: #333; 
     font-size: 17px;
     font-family: "Georgia"  
 }
@@ -48,9 +59,18 @@ li{
     padding-right: 100px;
 }
 
+.pic{
+
+    margin-left: 400;
+    padding-left: 400px;
+
+}
+
+
 #menu_box{
     margin-left: 800px;
 }
+
 
 /* class 可以给多个标签，重复使用, 也可以为一个指定多个class
 .text{
