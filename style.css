@@ -1,7 +1,12 @@
 
 /*
 CSS 语法
+
 */
+.top_menu{
+    margin: 50px;
+}
+
 p{
     color: rgb(0, 0, 0); 
     font-size: 20px; 
@@ -36,6 +41,10 @@ li{
 
 }
 
+.text{
+    padding-left: 100px;
+    padding-right: 100px;
+}
 
 /* class 可以给多个标签，重复使用, 也可以为一个指定多个class
 .text{
