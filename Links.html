@@ -1,31 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel = "stylesheet" href ="style.css">
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>Chen Yang</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
 </head>
 
+<body>
 
-<body class = "text">
-    <box id ="menu_box">
-    <span class= "top_menu"><a href = "./index.html">About Me</a></span>
-    <span class= "top_menu"><a href = "./CV.html" target="_blank">CV</a></span>
-    <span class= "top_menu"><a href = "./Links.html" target="_blank">Links</a></span>
-    </box>
-    <header>
-        <h1>Chen Yang</h1>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="./jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="./bootstrap-3.4.1-dist/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
 
-    </header>
-        <br><br><br>
-    <div class="pic">
-    <img src="https://raw.githubusercontent.com/chenyangfinance/chenyangfinance.github.io/main/picture_corporate_finance.jpg" alt="Corporate Finance">
+
+    <!-- <div class = "row">
+        <div class = "col-md-2 col-sm-2" style ="background-color: red;">4</div>
+        <div class = "col-md-10 col-sm-10" style ="background-color:sandybrown">8</div>
+    </div> -->
+    <nav class="nanbar navbar-inverse " role="navigation" style="font-family: Georgia;">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-collapse">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">Chen Yang</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="./CV.html">CV</a></li>
+                <li><a href="./Coding.html">Coding</a></li>
+                <li class="active"><a href="./Links.html">Links</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container" style="font-family: Georgia">
+        <h1>
+            Chen Yang
+        </h1>
+
+
+        <h2>
+            <i style="color:sienna;font-size: smaller;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Life is short, talk is cheap, show me the data, and the code.
+            </i>
+        </h2>
+
+        <ul> <br>
+            <br>
+            <br>
+<h3>
+    <strong>My Social Media:</strong>
+</h3>
+<ul>
+    <li style="font-size: large;">
+        <a href="https://github.com/chenyangfinance">Github</a>
+    </li>
+    <li style="font-size: large;">
+        <a>Twitter</a>
+    </li>
+</ul>
+
+<h3>
+    <strong>Useful Tools:</strong>
+</h3>
+<ul>
+    <li style="font-size: large;">
+        <a href="https://mark.show/#/">
+            Online Markdown Presentation
+        </a>
+    </li>
+    <li style="font-size: large;">
+        <a href="https://markdown.lovejade.cn/">
+            Online Markdown
+        </a>
+    </li>
+    <li style="font-size: large;">
+        <a href="https://www.overleaf.com">
+            Online Latex
+        </a>
+    </li>
+    <li style="font-size: large;">
+        <a hrefl="https://www.ruanyifeng.com/blog/weekly/">
+            阮一峰，科技爱好者周刊
+        </a>
+    </li>
+</ul>
+<h3>
+    <strong>Data:</strong>
+</h3>
+<ul>
+    <li style="font-size: large;">
+        <a href="https://www.city-data.com/">US City Data</a>
+    </li>
+
+</ul>
+<h3>
+    <strong>Scholars' Website:</strong>
+</h3>
+<ul>
+    <li style="font-size: large;">
+        <a href="http://kaichen.work/">Kai Chen (SAS Python Stata Coding)</a>
+    </li>
+
+</ul>
+
+
+        </ul>
     </div>
-    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="text-center">
+        <img src="https://raw.githubusercontent.com/chenyangfinance/chenyangfinance.github.io/main/picture_corporate_finance.jpg"
+            alt="Corporate Finance">
+    </div>
 
 
 </body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="text-center" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+    &copy;Coding by Chen
+</div>
+</footer>
+
 </html>

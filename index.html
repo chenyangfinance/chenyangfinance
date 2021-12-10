@@ -1,94 +1,193 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel = "stylesheet" href ="style.css">
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>Chen Yang</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
 </head>
 
+<body>
 
-<body class = "text">
-    <box id ="menu_box">
-    <span class= "top_menu"><a href = "./index.html">About Me</a></span>
-    <span class= "top_menu"><a href = "./CV.html" target="_blank">CV</a></span>
-    <span class= "top_menu"><a href = "./Links.html" target="_blank">Links</a></span>
-    </box>
-    <header>
-        <h1>Chen Yang</h1>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="./jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="./bootstrap-3.4.1-dist/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
 
-        <p id= "slogan">Talk is cheap, show me the code... and data...</p>
-        <p>I am a PhD student in Finance. I graduated from Leeds University Business School in 2018 and Jilin University School of Economics in 2016. I love corporate finance, financial economics, behavioural finance, and diet coke.
 
-        </p>
-    </header>
-    <br>
+    <!-- <div class = "row">
+        <div class = "col-md-2 col-sm-2" style ="background-color: red;">4</div>
+        <div class = "col-md-10 col-sm-10" style ="background-color:sandybrown">8</div>
+    </div> -->
+    <nav class="nanbar navbar-inverse " role="navigation" style="font-family: Georgia;">
 
-    <main >
-        <h2>Education</h2>
-        <ul>
-            <li>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-collapse">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">Chen Yang</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="index.html">About Me</a></li>
+                <li><a href="./CV.html">CV</a></li>
+                <li><a href="./Coding.html">Coding</a></li>
+                <li><a href="./Links.html">Links</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container" style="font-family: Georgia">
+        <h1>
+            Chen Yang
+        </h1>
+
+
+        <h2>
+            <i style="color:sienna;font-size: smaller;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Life is short, talk is cheap, show me the data, and the code.
+            </i>
+
+        </h2>
+        <hr /> <br>
+        <div class="lead">I am a PhD student in Finance. I graduated from Leeds University Business School in 2018 and
+            Jilin University
+            School of Economics in 2016. I love corporate finance, financial economics, behavioural finance, and diet
+            coke.</div>
+        <br>
+        <h3>
+            <strong>
+                Education
+            </strong>
+        </h3>
+        <ul class="list-unstyled">
+
+            <li class="lead">
                 PhD Student in Finance (Scholarship), Durham University Business School (Dec 2020- );
-                <div><em>Supervisors: <a href="https://www.durham.ac.uk/staff/business-staff/dimitris-petmezas/">
-                Prof Dimitris Petmezas</a>, <a href="https://www.dur.ac.uk/directory/profile/?id=4072">Prof Michael Guo</a></em></div>
+                <div><em> &nbsp;&nbsp;&nbsp;&nbsp;Supervisors: <a
+                            href="https://www.durham.ac.uk/staff/business-staff/dimitris-petmezas/">
+                            Prof Dimitris Petmezas</a>, <a href="https://www.dur.ac.uk/directory/profile/?id=4072">Prof
+                            Michael
+                            Guo</a></em></div>
             </li>
-            <li>
-                PhD Student in Finance (Full Scholarship), Surrey Business School  (Sep 2019- Nov 2020);
-                <div><em>Supervisors: <a href="https://www.durham.ac.uk/staff/business-staff/dimitris-petmezas/">Prof Dimitris Petmezas</a>, <a href="https://www.kcl.ac.uk/people/zicheng-lei">Dr Zicheng Lei</a></em></div>
+            <li class="lead">
+                PhD Student in Finance (Full Scholarship), Surrey Business School (Sep 2019- Nov 2020);
+                <div><em> &nbsp;&nbsp;&nbsp;&nbsp;Supervisors: <a
+                            href="https://www.durham.ac.uk/staff/business-staff/dimitris-petmezas/">Prof
+                            Dimitris
+                            Petmezas</a>, <a href="https://www.kcl.ac.uk/people/zicheng-lei">Dr Zicheng Lei</a></em>
+                </div>
             </li>
-            <li>
+            <li class="lead">
                 MSc in Finance (Distinction), Leeds University Business School (2017 Jul- 2018 Sep);
-              
+
             </li>
-            <li>
+            <li class="lead">
                 BSc in Finance, School of Economics, Jilin University (Sep 2012- Jul 2016).
             </li>
-            
-        </ul>
-    
-        <h2>Research Interests</h2>
-        <ul>
-            <li>
-                Corporate Finance, Corporate Governance, ESG, CSR, Financial Reporting.
-            </li>
-        </ul>
+        </ul> <br>
+        <h3>
+            <strong>
+                Research Interests
+            </strong>
+        </h3>
 
-        <h2>Working Paper</h2>
-        <ul>
-            <li>
-                1. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3718687" target="_blank">CEO Birthplace Identity and Corporate Social Responsibility</a>, with Dr Zicheng Lei (King's), Prof. Dimitris Petmezas (Durham), and <a href="https://www.jbs.cam.ac.uk/faculty-research/faculty-a-z/raghavendra-rau/#item1"  target="_blank">Prof. Raghavendra Rau</a> (Cambridge);
-            </li>
-            <li>
-                2. CEO Home Bias and Financial Misconduct , with Dr Zicheng Lei (King's), Prof. Dimitris Petmezas (Durham), and Prof. Raghavendra Rau (Cambridge).
-
-            </li>
-
+        <ul class="list-unstyled">
+            <li class="lead">Corporate Finance, Corporate Govanance, ESG, CSR, Financial Reporting</li>
         </ul>
-    
-        <h2>Work in Progress</h2>
-        <ul>
-            <li>
-                1. CEO Home Bias and M&A.
-            </li>
-        </ul>
-        
-    
-        <h2>Teaching Experience</h2>
-        <ul>
-            <li>
-                1. Teaching Assitant (Seminar Tutor). <em>ECON2180 Introduction to Financial Econometrics</em> (Oct 2021-Dec 2021)
-            </li>
-        </ul>
+        <br>
+        <h3>
+            <strong>
+                Working Paper
+            </strong>
+        </h3>
 
-        <br><br><br>
-        <div class="pic">
-            <img src="https://raw.githubusercontent.com/chenyangfinance/chenyangfinance.github.io/main/picture_corporate_finance.jpg" alt="Corporate Finance">
-        </div>
-    </main>
-    
+        <ol>
+            <li class="lead">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3718687" target="_blank">CEO Birthplace
+                    Identity
+                    and Corporate Social Responsibility</a>.
+                <p style="font-size: large; font-style: italic;">with Dr Zicheng Lei (King's), Prof. Dimitris Petmezas
+                    (Durham)
+                    and<a href="https://www.jbs.cam.ac.uk/faculty-research/faculty-a-z/raghavendra-rau/#item1"
+                        target="_blank"> Prof. Raghavendra Rau</a> (Cambridge).</p>
+                <p style="font-size: large; ">Present at: FMA 2021, CICF 2021, EFMA 2021, DGF 2021, 4th Conference on
+                    CSR, the Economy and
+                    Financial Markets 2021 </p>
+            </li>
+            <li class="lead">
+                CEO Home Bias and Financial Misconduct. <p style="font-size: large; font-style: italic;">with Dr Zicheng
+                    Lei (King's), Prof. Dimitris Petmezas (Durham),
+                    and Prof. Raghavendra Rau (Cambridge).</p>
+                <p style="font-size: large; ">Present at: FMA European 2021</p>
+            </li>
+        </ol>
+        <br>
+
+
+        <h3>
+            <strong>
+                Work in Progress
+            </strong>
+        </h3>
+        <ol>
+            <li class="lead">CEO Home Bias and M&A.</li>
+        </ol>
+
+        <br>
+        <h3>
+            <strong>
+                Teaching
+            </strong>
+        </h3>
+        <ol>
+            <li class="lead">Teaching Assitant (Seminar Tutor). <em>ECON2181 Introduction to Financial Econometrics</em>
+                (Oct 2021-Dec
+                2021)</li>
+        </ol>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="text-center">
+        <img src="https://raw.githubusercontent.com/chenyangfinance/chenyangfinance.github.io/main/picture_corporate_finance.jpg"
+            alt="Corporate Finance">
+    </div>
 
 
 </body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="text-center" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+    &copy;Coding by Chen
+</div>
+</footer>
+
 </html>
