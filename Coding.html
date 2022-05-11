@@ -100,7 +100,7 @@
                         <br>
 
                         <p class="h4"><b><u>Stata Packages</u></b> 
-                            <p class="h4"> 1. DID3  <a href="https://github.com/kkranker/kk-adofiles">[Github Link]</a></p>  
+                            <p class="h4"> 1. DID3: univar DID <a href="https://github.com/kkranker/kk-adofiles">[Github Link]</a></p>  
                             <p class="h4"> did3 is a command that do univariate difference-in-difference test. ALL RESULTS IN ONE GO! But it cannot be installed using "<i>ssc install</i>", what a pity! We need to download the ado and help file from  <a href="https://github.com/kkranker/kk-adofiles">Keith Kranker's github repository</a> and save them in your stata path (e.g., C:\Program Files\Stata16\ado\base\d). Always remember to put it in file "d", the first letter of did3. </p> 
                             <br>
                             <p class="h4"> Finally, the output of did3 is like below:  </p> 
@@ -108,12 +108,34 @@
                                 <br>
                                 <img src="https://raw.githubusercontent.com/chenyangfinance/chenyangfinance.github.io/main/did3.png"
                                     alt="did3" width = "600">   
-
                     <br>
                 </div>
+                <p class="h4"> 2. kmatch: the best matching tool in Stata</p> 
+                <p class="h4"> kmatch is the most comprehensive tool in Stata to do matching. It is capable to do a wide range of matching issues, including multivariate-distance and propensity-score matching (PSM), including entropy balancing, inverse probability weighting, (coarsened) exact matching, and regression adjustment. The most exciting and useful thing is kmatch can add <b> EXACT MATCHING !!!</b>. This means, e.g., when you calculate propensity score in PSM, you can use some variables (firm size, leverage, ROA, etc.) to get the score but require exact matching of some variables (industry, year, state) at the same time.          
+       </p> 
+       <p class="h4"> Easy to install with:
+       </p> 
+       <pre>
+ssc install kmatch 
 
-                
-    </div>
+help kmatch
+</pre>
+ <br>
+<p class="h4"> 3. ffind: convert SIC industry codes to Fama-French 30/48/49 codes </p> 
+<p class="h4"> Written by <a href="https://sites.google.com/site/judsoncaskey/data">Judson Caskey, with UCLA</a>, &nbsp <i> ffind</i> is an esay-to-use command to convert SIC codes to Fama-French industry codes. You will need to install from the website.
+<pre>
+net from https://sites.google.com/site/judsoncaskey/data
+net install utilities.pkg</pre>  
+</p> 
+<p class="h4"> To use it, </p> 
+<pre>
+ffind sic, newvar(ff48) type(48)
+
+* This command converts SIC codes (variable name: sic) to Fama-French 48 codes (variable name: ff48)
+* type() is the option to input the type of Fama-French codes, i.e., 30, 48, or 49.
+</pre>
+<p class="h4"> See here for an equivalent SAS macro: <a href="http://faculty-gsb.stanford.edu/dehaan/SAS.html">http://faculty-gsb.stanford.edu/dehaan/SAS.html</a> </p> 
+</div>
 
 
 </body>
